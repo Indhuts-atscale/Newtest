@@ -1,0 +1,48 @@
+unique_name: Product_Category
+object_type: dimension
+label: Product_Category
+hierarchies:
+  - unique_name: Product_Category Hierarchy
+    label: Product_Category Hierarchy
+    filter_empty: 'yes'
+    folder: Product
+    levels:
+      - unique_name: Product_Category Level
+        secondary_attributes:
+          - unique_name: productcategorykey
+            label: productcategorykey
+            contains_unique_names: false
+            dataset: dimproductcategory
+            folder: Product/Category
+            is_unique_key: false
+            key_columns:
+              - productcategorykey
+            name_column: productcategorykey
+          - unique_name: productcategoryname
+            label: productcategoryname
+            contains_unique_names: false
+            dataset: dimproductcategory
+            folder: Product/Category
+            is_unique_key: false
+            key_columns:
+              - productcategoryname
+            name_column: productcategoryname
+          - unique_name: productcategoryalternatekey
+            label: productcategoryalternatekey
+            contains_unique_names: false
+            dataset: dimproductcategory
+            folder: Product/Category
+            is_unique_key: false
+            key_columns:
+              - productcategoryalternatekey
+            name_column: productcategoryalternatekey
+level_attributes:
+  - unique_name: Product_Category Level
+    label: Product_Category Level
+    contains_unique_names: false
+    dataset: dimproductcategory
+    is_unique_key: false
+    key_columns:
+      - productcategorykey
+    name_column: productcategoryname
+type: standard

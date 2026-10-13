@@ -1,0 +1,8 @@
+unique_name: m_Internetsales_taxamt_sum
+object_type: metric
+label: Tax Amount
+calculation_method: sum
+column: taxamt
+dataset: Internetsales
+format: $#,##0
+unrelated_dimensions_handling: empty

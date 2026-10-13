@@ -1,0 +1,8 @@
+unique_name: m_Internetsales_orderquantity_sum
+object_type: metric
+label: Order Quantity
+calculation_method: sum
+column: orderquantity
+dataset: Internetsales
+format: '###,###,##'
+unrelated_dimensions_handling: empty

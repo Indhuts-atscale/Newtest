@@ -1,0 +1,8 @@
+unique_name: m_Internetsales_unitprice_sum
+object_type: metric
+label: Unit Price
+calculation_method: sum
+column: unitprice
+dataset: Internetsales
+format: $#,##0
+unrelated_dimensions_handling: empty

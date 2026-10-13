@@ -1,0 +1,12 @@
+unique_name: dimproductcategory
+object_type: dataset
+label: dimproductcategory
+columns:
+  - name: productcategorykey
+    data_type: int
+  - name: productcategoryalternatekey
+    data_type: int
+  - name: productcategoryname
+    data_type: string
+connection_id: con_atscale_as_adventure
+table: dimproductcategory

@@ -1,0 +1,22 @@
+unique_name: New Model
+object_type: model
+label: New Model
+dimensions: []
+metrics:
+  - unique_name: m_Internetsales_orderquantity_sum
+    folder: Internet Sales
+  - unique_name: m_Internetsales_unitprice_sum
+    folder: Internet Sales
+  - unique_name: m_Internetsales_salesamount_sum
+    folder: Internet Sales
+  - unique_name: m_Internetsales_taxamt_sum
+    folder: Internet Sales
+relationships:
+  - unique_name: Internetsales_productkey_to_Product_Product Level
+    from:
+      dataset: Internetsales
+      join_columns:
+        - productkey
+    to:
+      dimension: Product
+      level: Product Level

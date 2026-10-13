@@ -1,0 +1,86 @@
+unique_name: Product
+object_type: dimension
+label: Product
+hierarchies:
+  - unique_name: Product Hierarchy
+    label: Product Hierarchy
+    folder: Product
+    levels:
+      - unique_name: Category
+        secondary_attributes:
+          - unique_name: categoryname
+            label: Categoryname
+            contains_unique_names: false
+            dataset: dimproductcategory
+            folder: Product
+            is_unique_key: false
+            key_columns:
+              - productcategoryname
+            name_column: productcategoryname
+      - unique_name: Sub Category
+        secondary_attributes:
+          - unique_name: subcategoryname
+            label: Subcategoryname
+            contains_unique_names: false
+            dataset: dimproductsubcategory
+            folder: Product
+            is_unique_key: false
+            key_columns:
+              - productsubcategoryname
+            name_column: productsubcategoryname
+      - unique_name: Product Level
+        secondary_attributes:
+          - unique_name: englishproductname
+            label: productname
+            contains_unique_names: false
+            dataset: dimproduct
+            folder: Product
+            is_unique_key: false
+            key_columns:
+              - englishproductname
+            name_column: englishproductname
+          - unique_name: listprice
+            label: listprice
+            contains_unique_names: false
+            dataset: dimproduct
+            folder: Product
+            is_unique_key: false
+            key_columns:
+              - listprice
+            name_column: listprice
+          - unique_name: startdate
+            label: startdate
+            contains_unique_names: false
+            dataset: dimproduct
+            folder: Product
+            is_unique_key: false
+            key_columns:
+              - startdate
+            name_column: startdate
+level_attributes:
+  - unique_name: Product Level
+    label: Product Level
+    contains_unique_names: false
+    dataset: dimproduct
+    is_unique_key: false
+    key_columns:
+      - productkey
+    name_column: englishproductname
+  - unique_name: Category
+    label: Category
+    contains_unique_names: false
+    dataset: dimproductcategory
+    is_unique_key: false
+    key_columns:
+      - productcategorykey
+    name_column: productcategoryname
+  - unique_name: Sub Category
+    label: Sub Category
+    contains_unique_names: false
+    dataset: dimproductsubcategory
+    is_unique_key: false
+    key_columns:
+      - productsubcategorykey
+    name_column: productsubcategoryname
+relationships: []
+type: standard
