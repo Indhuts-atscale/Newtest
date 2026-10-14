@@ -1,0 +1,6 @@
+unique_name: m_dc_model_count
+object_type: metric
+label: Model Count
+calculation_method: count distinct
+column: model_name
+dataset: data_catalog_relationships

@@ -1,0 +1,32 @@
+unique_name: dc_fact
+object_type: dimension
+label: Catalog Fact
+type: standard
+is_degenerate: true
+hierarchies:
+  - unique_name: dc_fact_hierarchy
+    label: Fact Join
+    levels:
+      - unique_name: dc_fact_dataset
+      - unique_name: dc_fact_join_key
+        secondary_attributes:
+          - unique_name: dc_relationship_name
+            label: Relationship
+            dataset: data_catalog_relationships
+            key_columns:
+              - relationship_name
+            name_column: relationship_name
+level_attributes:
+  - unique_name: dc_fact_dataset
+    label: Fact Dataset
+    dataset: data_catalog_relationships
+    key_columns:
+      - fact_dataset
+    name_column: fact_dataset
+  - unique_name: dc_fact_join_key
+    label: Fact Join Key
+    dataset: data_catalog_relationships
+    key_columns:
+      - fact_dataset
+      - fact_join_key
+    name_column: fact_join_key

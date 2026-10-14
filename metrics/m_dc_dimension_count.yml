@@ -1,0 +1,6 @@
+unique_name: m_dc_dimension_count
+object_type: metric
+label: Dimension Count
+calculation_method: count distinct
+column: dimension_name
+dataset: data_catalog_relationships

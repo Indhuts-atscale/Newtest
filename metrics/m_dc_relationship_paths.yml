@@ -1,0 +1,6 @@
+unique_name: m_dc_relationship_paths
+object_type: metric
+label: Relationship Paths
+calculation_method: count distinct
+column: catalog_row_id
+dataset: data_catalog_relationships

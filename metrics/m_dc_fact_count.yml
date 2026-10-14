@@ -1,0 +1,6 @@
+unique_name: m_dc_fact_count
+object_type: metric
+label: Fact Dataset Count
+calculation_method: count distinct
+column: fact_dataset
+dataset: data_catalog_relationships

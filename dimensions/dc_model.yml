@@ -1,0 +1,17 @@
+unique_name: dc_model
+object_type: dimension
+label: Catalog Model
+type: standard
+is_degenerate: true
+hierarchies:
+  - unique_name: dc_model_hierarchy
+    label: Model
+    levels:
+      - unique_name: dc_model_name
+level_attributes:
+  - unique_name: dc_model_name
+    label: Model
+    dataset: data_catalog_relationships
+    key_columns:
+      - model_name
+    name_column: model_label

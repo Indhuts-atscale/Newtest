@@ -1,0 +1,45 @@
+unique_name: dc_dimension
+object_type: dimension
+label: Catalog Dimension
+type: standard
+is_degenerate: true
+hierarchies:
+  - unique_name: dc_dimension_hierarchy
+    label: Dimension Attribute
+    levels:
+      - unique_name: dc_dimension_name
+        secondary_attributes:
+          - unique_name: dc_dimension_dataset
+            label: Dimension Dataset
+            dataset: data_catalog_relationships
+            key_columns:
+              - dimension_dataset
+            name_column: dimension_dataset
+      - unique_name: dc_attribute_name
+        secondary_attributes:
+          - unique_name: dc_attribute_type
+            label: Attribute Type
+            dataset: data_catalog_relationships
+            key_columns:
+              - attribute_type
+            name_column: attribute_type
+          - unique_name: dc_attribute_key_column
+            label: Attribute Key Column
+            dataset: data_catalog_relationships
+            key_columns:
+              - attribute_key_column
+            name_column: attribute_key_column
+level_attributes:
+  - unique_name: dc_dimension_name
+    label: Dimension
+    dataset: data_catalog_relationships
+    key_columns:
+      - dimension_name
+    name_column: dimension_label
+  - unique_name: dc_attribute_name
+    label: Attribute
+    dataset: data_catalog_relationships
+    key_columns:
+      - dimension_name
+      - attribute_name
+    name_column: attribute_label

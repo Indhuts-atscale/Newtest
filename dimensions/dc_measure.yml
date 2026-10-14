@@ -1,0 +1,30 @@
+unique_name: dc_measure
+object_type: dimension
+label: Catalog Measure
+type: standard
+is_degenerate: true
+hierarchies:
+  - unique_name: dc_measure_hierarchy
+    label: Measure
+    levels:
+      - unique_name: dc_measure_name
+        secondary_attributes:
+          - unique_name: dc_measure_aggregation
+            label: Aggregation
+            dataset: data_catalog_relationships
+            key_columns:
+              - aggregation
+            name_column: aggregation
+          - unique_name: dc_measure_fact_column
+            label: Measure Source Column
+            dataset: data_catalog_relationships
+            key_columns:
+              - fact_column
+            name_column: fact_column
+level_attributes:
+  - unique_name: dc_measure_name
+    label: Measure
+    dataset: data_catalog_relationships
+    key_columns:
+      - measure_name
+    name_column: measure_label
