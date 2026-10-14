@@ -1,0 +1,5 @@
+model_name,metric_name,metric_label,aggregation,fact_dataset,fact_table,source_column,format,folder
+New Model,m_Internetsales_orderquantity_sum,Order Quantity,sum,Internetsales,factinternetsales,orderquantity,"###,###,##",Internet Sales
+New Model,m_Internetsales_unitprice_sum,Unit Price,sum,Internetsales,factinternetsales,unitprice,"$#,##0",Internet Sales
+New Model,m_Internetsales_salesamount_sum,Sales Amount,sum,Internetsales,factinternetsales,salesamount,"$#,##0",Internet Sales
+New Model,m_Internetsales_taxamt_sum,Tax Amount,sum,Internetsales,factinternetsales,taxamt,"$#,##0",Internet Sales

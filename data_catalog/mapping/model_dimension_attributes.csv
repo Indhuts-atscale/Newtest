@@ -1,0 +1,17 @@
+model_name,dimension_name,dimension_label,hierarchy_name,level_number,level_name,attribute_name,attribute_label,attribute_type,dataset,key_column,name_column
+New Model,Product,Product,Product Hierarchy,1,Category,Category,Category,Level,dimproductcategory,productcategorykey,productcategoryname
+New Model,Product,Product,Product Hierarchy,1,Category,categoryname,Categoryname,Secondary,dimproductcategory,productcategoryname,productcategoryname
+New Model,Product,Product,Product Hierarchy,2,Sub Category,Sub Category,Sub Category,Level,dimproductsubcategory,productsubcategorykey,productsubcategoryname
+New Model,Product,Product,Product Hierarchy,2,Sub Category,subcategoryname,Subcategoryname,Secondary,dimproductsubcategory,productsubcategoryname,productsubcategoryname
+New Model,Product,Product,Product Hierarchy,3,Product Level,Product Level,Product Level,Join Level,dimproduct,productkey,englishproductname
+New Model,Product,Product,Product Hierarchy,3,Product Level,englishproductname,productname,Secondary,dimproduct,englishproductname,englishproductname
+New Model,Product,Product,Product Hierarchy,3,Product Level,listprice,listprice,Secondary,dimproduct,listprice,listprice
+New Model,Product,Product,Product Hierarchy,3,Product Level,startdate,startdate,Secondary,dimproduct,startdate,startdate
+New Model,dim_date_day_dimension,dim_date_day_dimension,Year-Quarter-Month-Day Hierarchy,1,Year,Year,Year,Level,dim_date_day,year,year
+New Model,dim_date_day_dimension,dim_date_day_dimension,Year-Quarter-Month-Day Hierarchy,1,Year,years,years,Secondary,dim_date_day,year,year
+New Model,dim_date_day_dimension,dim_date_day_dimension,Year-Quarter-Month-Day Hierarchy,2,Quarter,Quarter,Quarter,Level,dim_date_day,quarter_id,quarter_id
+New Model,dim_date_day_dimension,dim_date_day_dimension,Year-Quarter-Month-Day Hierarchy,2,Quarter,Quarters,Quarters,Secondary,dim_date_day,quarter_id,quarter_id
+New Model,dim_date_day_dimension,dim_date_day_dimension,Year-Quarter-Month-Day Hierarchy,3,month,month,monthname,Level,dim_date_day,month_id,month_id
+New Model,dim_date_day_dimension,dim_date_day_dimension,Year-Quarter-Month-Day Hierarchy,3,month,monthname,monthname,Secondary,dim_date_day,month_id,month_id
+New Model,dim_date_day_dimension,dim_date_day_dimension,Year-Quarter-Month-Day Hierarchy,4,Day ID,Day ID,Day ID,Join Level,dim_date_day,day_id,day_id_expanded
+New Model,dim_date_day_dimension,dim_date_day_dimension,Year-Quarter-Month-Day Hierarchy,4,Day ID,day_id_expanded,day_id_expanded,Secondary,dim_date_day,day_id_expanded,day_id_expanded

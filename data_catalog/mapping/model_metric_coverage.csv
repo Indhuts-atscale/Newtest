@@ -1,0 +1,9 @@
+model_name,metric_name,metric_label,dimension_name,dimension_label,attribute_count
+New Model,m_Internetsales_orderquantity_sum,Order Quantity,Product,Product,8
+New Model,m_Internetsales_orderquantity_sum,Order Quantity,dim_date_day_dimension,dim_date_day_dimension,8
+New Model,m_Internetsales_unitprice_sum,Unit Price,Product,Product,8
+New Model,m_Internetsales_unitprice_sum,Unit Price,dim_date_day_dimension,dim_date_day_dimension,8
+New Model,m_Internetsales_salesamount_sum,Sales Amount,Product,Product,8
+New Model,m_Internetsales_salesamount_sum,Sales Amount,dim_date_day_dimension,dim_date_day_dimension,8
+New Model,m_Internetsales_taxamt_sum,Tax Amount,Product,Product,8
+New Model,m_Internetsales_taxamt_sum,Tax Amount,dim_date_day_dimension,dim_date_day_dimension,8

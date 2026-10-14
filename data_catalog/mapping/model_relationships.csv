@@ -1,0 +1,3 @@
+model_name,relationship_name,fact_dataset,fact_join_column,dimension_name,dimension_label,join_level,dimension_dataset,dimension_key_column
+New Model,Internetsales_productkey_to_Product_Product Level,Internetsales,productkey,Product,Product,Product Level,dimproduct,productkey
+New Model,Internetsales_orderdatekey_to_dim_date_day_dimension_Day ID,Internetsales,orderdatekey,dim_date_day_dimension,dim_date_day_dimension,Day ID,dim_date_day,day_id

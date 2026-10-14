@@ -1,0 +1,6 @@
+issue_number,model_name,object_name,issue,impact,recommendation
+1,New Model,Product,"Category and Sub Category levels come from dimproductcategory and dimproductsubcategory, but the Product dimension has no relationships",Slicing by Category or Sub Category may fail or return wrong totals,"Add dimension relationships: dimproduct.productsubcategorykey -> Sub Category, dimproductsubcategory.productcategorykey -> Category"
+2,New Model,dim_date_day_dimension,"years, Quarters and the secondary monthname repeat their level's key column",BI users see each date attribute twice,"Remove the duplicates, or point them at quarter_name / month_name"
+3,New Model,dim_date_day_dimension,The month level and monthname secondary are labelled monthname but show month_id,Users expect month names and get numeric ids,"Use month_name as the name column, or relabel it Month ID"
+4,New Model,m_Internetsales_unitprice_sum,Unit Price is summed,A sum of unit prices across orders is rarely meaningful,"Use average, or keep sum and label it clearly"
+5,New Model,Product_Category,Product_Category dimension is not used by any model,Repo clutter; overlaps Product's Category level,"Remove it, or add it to the model if needed"
