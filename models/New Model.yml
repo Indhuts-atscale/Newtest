@@ -20,3 +20,11 @@ relationships:
     to:
       dimension: Product
       level: Product Level
+  - unique_name: Internetsales_orderdatekey_to_dim_date_day_dimension_Day ID
+    from:
+      dataset: Internetsales
+      join_columns:
+        - orderdatekey
+    to:
+      dimension: dim_date_day_dimension
+      level: Day ID
